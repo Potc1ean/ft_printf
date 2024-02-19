@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ichpakov <ichpakov@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/30 03:25:27 by ichpakov          #+#    #+#              #
+#    Updated: 2023/11/30 03:39:46 by ichpakov         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libftprintf.a
 
 CFLAGS = -Wall -Werror -Wextra
@@ -26,3 +38,5 @@ fclean:
 	@echo "$(GREEN)The object files and library have been removed!"
 
 re:	fclean $(NAME)
+
+.PHONY:			all clean fclean re bonus
